@@ -1,0 +1,62 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>{% block title %}
+        
+        {% endblock %}</title>
+  </head>
+  <header>
+    <div class="navbar">
+        <div style="font-size:x-large;margin-left: 12px;">Flask Market</div>
+        <ul class="ul-list">
+          <li><a href='/home' class='nav-item-'>Home</a></li>
+          <li><a href='/market' class='nav-item-'>Market</a></li>
+            <li><a href='/register' class='nav-item-'>Register</a></li>
+            <li><a href='/login' class='nav-item-'>Login</a></li>
+        </ul>
+    </div>
+</header>
+{% block content %}
+
+{% endblock %}
+  <style>
+      body{
+          background-color: slategrey;
+          
+          margin: 0;
+          padding: 0;
+          font-family: 'Roboto Mono', monospace;
+      }
+      .navbar {
+    height: 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+      background-color: black;
+    font-family: 'Praise', cursive;
+    color: #e5dbdb; 
+  }
+  
+  .nav-item-{
+    text-decoration: none;
+    margin-right:16px;
+    color:#969696;
+    font-size:17px;
+    padding:3px;
+    font-weight: 400;
+    font-family: 'Roboto Mono', monospace;
+  }
+  .nav-item-:hover{
+    color:white;
+  }
+  .ul-list{
+    display: flex;
+    list-style:none;
+    padding:10px;
+    padding-top: 10px;
+  }
+  </style>
+</html>
