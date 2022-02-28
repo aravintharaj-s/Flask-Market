@@ -4,7 +4,7 @@
   <head>
     <title>Market</title>
   </head>
-  <body>
+  <header>
     <div class="navbar">
         <div style="font-size:x-large;margin-left: 12px;">Market</div>
         <ul class="ul-list">
@@ -14,11 +14,42 @@
             <li><a href='/login' class='nav-item-'>Login</a></li>
         </ul>
     </div>
+
+  </header>
+  <body>
+    <h1>Market Page</h1>
+    <table class="table">
+      <thead>
+          <tr>
+              <!-- Your Columns HERE -->
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">Barcode</th>
+              <th scope="col">Price</th>
+              <th scope="col">Options</th>
+          </tr>
+      </thead>
+      <tbody>
+          <!-- Your rows inside the table HERE: -->
+          {%for item in items%}
+              <tr>
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.barcode}}</td>
+                <td>{{item.price}}$</td> 
+                <td>
+                  <button style="padding: 10px;background-color: cornflowerblue;">More Info</button>
+                  <button style="padding: 10px;background-color: green;">Purchase this item</button>
+                </td>                
+              </tr>
+            {%endfor%}
+      </tbody>
+  </table>
   </body>
   <style>
       body{
           background-color: slategrey;
-          color: wheat;
+          color: black;
           margin: 0;
           padding: 0;
           font-family: 'Roboto Mono', monospace;
@@ -52,6 +83,21 @@
     list-style:none;
     padding:10px;
     padding-top: 10px;
+  }
+  table, td, th {  
+    border: 1px solid rgb(12, 11, 11);
+    background-color: rgba(255, 255, 255, 0.444);
+    
+    text-align: center;
+  }
+  
+  table {
+    width: 80%;
+    margin-left: 100px;
+  }
+  
+  th, td {
+    padding: 15px;
   }
   </style>
 </html>
