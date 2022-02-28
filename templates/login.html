@@ -1,0 +1,88 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="navbar">
+        <div style="font-size:x-large;margin-left: 12px;">Login</div>
+        <ul class="ul-list">
+          <li><a href='/home' class='nav-item-'>Home</a></li>
+          <li><a href='/market' class='nav-item-'>Market</a></li>
+            <li><a href='/register' class='nav-item-'>Register</a></li>
+            <li><a href='/login' class='nav-item-'>Login</a></li>
+        </ul>
+    </div>
+    <div class="card">
+        Login
+        <div class="inputt">
+        <p>Username : </p>
+        <input placeholder="Enter username"></input>
+        <p>Password : </p>
+        <input placeholder="Enter password"></input>
+        </div>
+    </div>
+  </body>
+  <style>
+      body{
+          background-color: slategrey;
+          color: wheat;
+          margin: 0;
+          padding: 0;
+          font-family: 'Roboto Mono', monospace;
+      }
+      .inputt{
+          margin-top: 100px;
+      }
+      input{
+          border-radius: 5px;
+          background-color: rgba(255, 228, 196, 0.111);
+          color:white;
+          align-self:center;
+      }
+      .card{
+        width: 350px;
+        background: rgba(255, 255, 255, 0.103);
+        border: 1px solid #5c6574;
+        box-shadow: 0 2px 4px rgba(209, 203, 203, 0.1), 0 8px 16px rgb(0 0 0 / 10%);
+        border-radius: 6px;
+        padding: 1rem;
+        align-items: center;
+        text-align: center;
+        padding-top: 10px;
+        margin: 200px;
+        margin-left: 500px;
+      }
+      .navbar {
+    height: 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+      background-color: black;
+    font-family: 'Praise', cursive;
+    color: #e5dbdb; 
+  }
+  
+  .nav-item-{
+    text-decoration: none;
+    margin-right:16px;
+    color:#969696;
+    font-size:17px;
+    padding:3px;
+    font-weight: 400;
+    font-family: 'Roboto Mono', monospace;
+  }
+  .nav-item-:hover{
+    color:white;
+  }
+  .ul-list{
+    display: flex;
+    list-style:none;
+    padding:10px;
+    padding-top: 10px;
+  }
+  </style>
+</html>
