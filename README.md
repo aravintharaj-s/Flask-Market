@@ -1,4 +1,4 @@
-A tutorial for FLASK
+A mini-project to learn the basics of FLASK
 
 <br>
 <br>
